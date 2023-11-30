@@ -6,7 +6,7 @@ class Cursos(models.Model):
     nomC = models.CharField(max_length=80,verbose_name="Nombre de curso")
     image = models.ImageField(upload_to="projects")
     desC = models.TextField(verbose_name="Descripcion")
-    durC = models.CharField(max_length=80,verbose_name="Duración de curso")
+    fechaI = models.CharField(max_length=80,verbose_name="Fecha de inicio")
     def formatted_desC(self):
         # Usa linebreaks para que los saltos de línea se reflejen
         return format_html(self.desC.replace('\n', '<br>'))
@@ -20,7 +20,7 @@ class Cursos(models.Model):
     ]
 
     modC = models.CharField(max_length=15, choices=MODALIDAD_CHOICES, verbose_name="Modalidad de curso")
-    valorC =models.CharField(max_length=80,verbose_name="Valor de curso")
+    fechaT =models.CharField(max_length=80,verbose_name="Fecha de Termino")
     class Meta:
         verbose_name="Curso"
         verbose_name_plural="Cursos"

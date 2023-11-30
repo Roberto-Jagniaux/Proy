@@ -4,6 +4,21 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ .drop-area {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drop-area input {
+  display: none;
+}
+
+.message_input {
+  width: 100%;
+  padding: 10px;
+} 
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
