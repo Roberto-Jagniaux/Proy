@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %}
+
+{%load static%}
+{% block content %}
+{% endblock %}
+
+
+{% block content1 %}
+  <body class="sub_page">
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="d-flex flex-column align-items-end">
+        <div class="custom_heading-container">
+          <hr>
+          <h2>
+            Contactanos
+          </h2>
+        </div>
+      </div>
+      <div class="layout_padding-top layout_padding2-bottom">
+        <div class="row">
+          <div class="col-md-7">
+            <form action="">
+              <div class="contact_form-container">
+                <div>
+                  <div>
+                    <input type="text" placeholder="Nombre">
+                  </div>
+                  <div>
+                    <input type="email" placeholder="Correo">
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Telefono">
+                  </div>
+                  <div class="">
+                    <input type="text" placeholder="Mensaje" class="message_input">
+                  </div>
+                  <div class="mt-5">
+                    <button type="submit">
+                      enviar
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="map-box">
+              <div id="map">
+                <div class="map-responsive">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.384008550171!2d-73.0547705241601!3d-36.83327827223772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5d788cfb29b%3A0xb28bb706363c520e!2zQW5nb2wgNDcsIDQwNzAzMTIgQ29uY2VwY2nDs24sIELDrW8gQsOtbw!5e0!3m2!1ses!2scl!4v1701033315995!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+{% endblock %}
